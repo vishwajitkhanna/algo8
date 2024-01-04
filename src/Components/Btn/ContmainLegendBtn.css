@@ -1,13 +1,22 @@
 .contmainLegendBtnHover{
     position: relative;
 }
+#document-btn4{
+    padding: 2px 10px;
+    font-size: 10px;
+    background-color: rgb(69, 69, 69);
+    text-transform: capitalize;
+}
+#document-btn4:hover{
+    background-color: #1565C0;
+}
 .contmainLegendBtnSubmenuHover{
     position: absolute;
     bottom: 150%;
     left: 0%;
     display: none;
     width: 150px;
-    border: 2px solid red;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
     font-size: 10px;
     flex-direction: column;
     gap: 5px;

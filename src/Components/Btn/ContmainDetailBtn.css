@@ -1,13 +1,30 @@
 .contmainDetailBtnHover{
     position: relative;
 }
+#document-btn2{
+    font-size: 9px;
+    border: 1px solid #1565C0;
+    color: #1565C0;
+    height: 25px;
+    min-width: 60px;
+    padding: 0px 2px;
+    text-transform: capitalize;
+}
+#document-btn2:hover{
+    background-color: #1565C0;
+    color: white;
+}
+.details-active{
+    color: #8FC492;
+}
 .contmainDetailBtnSubmenuHover{
     position: absolute;
     top: 150%;
     right: 0%;
     display: none;
     width: 235px;
-    border: 2px solid red;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+
     font-size: 10px;
     flex-direction: column;
     gap: 5px;

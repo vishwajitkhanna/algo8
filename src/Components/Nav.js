@@ -5,6 +5,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
 const Nav = () => {
+  let onProfile = () => {};
   return (
     <nav>
       <div>
@@ -15,9 +16,14 @@ const Nav = () => {
       <div className="nav-left">
         <div>Last Updated on 18/05/2023</div>
         <NotificationsIcon />
-        <div>
+        <div className="nav-profile">
           <AccountCircleIcon />
           <KeyboardArrowDownIcon />
+          <div className="nav-profile-menu" onClick={onProfile}>
+            <div>Profile Setting</div>
+            <div>Walkthrough</div>
+            <div>Signout</div>
+          </div>
         </div>
       </div>
     </nav>

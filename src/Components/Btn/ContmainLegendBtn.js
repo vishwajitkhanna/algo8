@@ -8,9 +8,9 @@ const ContmainLegendBtn = () => {
     <div>
       <Button
         className="contmainLegendBtnHover"
-        id="document-btn"
+        id="document-btn4"
         variant="contained"
-        startIcon={<InterestsIcon />}
+        startIcon={<InterestsIcon style={{ fill: "#ffffff" }} />}
       >
         Legends
         <div className="contmainLegendBtnSubmenuHover">

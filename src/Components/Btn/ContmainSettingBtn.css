@@ -1,5 +1,18 @@
-.contmainSettingBtnHover{
+.setting-btn{
     position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(78, 78, 78);
+    padding: 1px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setting-icon{
+    font-size: 20px;
+}
+.setting-btn:hover{
+    background-color: #1565C0;
 }
 .contmainSettingBtnSubmenuHover{
     position: absolute;
@@ -7,13 +20,13 @@
     right: 0%;
     display: none;
     width: 180px;
-    border: 2px solid red;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
     font-size: 10px;
     flex-direction: column;
     gap: 5px;
     padding: 10px;
 }
-.contmainSettingBtnHover:hover .contmainSettingBtnSubmenuHover{
+.setting-btn:hover .contmainSettingBtnSubmenuHover{
     display: flex;
 }
 

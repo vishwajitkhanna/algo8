@@ -9,21 +9,21 @@
     grid-template-rows: 3.5fr 3.5fr;
 }
 .c1{
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 5px;
     padding:5px;
 }
 .c2{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     grid-column: 1/2;
     grid-row: 2/3;
     border-radius: 5px;
     padding:5px;
 }
 .c3{
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(255, 255, 255);
     grid-column: 2/3;
     grid-row: 1/3;
     border-radius: 5px;
@@ -60,5 +60,37 @@
 .graph-img img{
     width: 100%;
     height: 100%;
+}
+
+.c1-checkbox{
+    font-size: 9px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.c1-checkbox>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.c1-checkbox1{
+    padding: 4px;
+    background-color: #D85140;
+}
+.c1-checkbox2{
+    padding: 4px;
+    background-color: #EBA89F;
+}
+.c1-checkbox3{
+    padding: 4px;
+    background-color: #F8E8D6;
+}
+
+.c1-top{
+    font-size: 11px;
+    font-weight: 600;
 }
 

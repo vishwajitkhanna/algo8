@@ -2,9 +2,11 @@ import React from "react";
 import "./Contmain.css";
 import Button from "@mui/material/Button";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import ContmainDetailBtn from "./ContmainDetailBtn";
-import ContmainSettingBtn from "./ContmainSettingBtn";
-import ContmainLegendBtn from "./ContmainLegendBtn";
+import ContmainDetailBtn from "./Btn/ContmainDetailBtn";
+import ContmainSettingBtn from "./Btn/ContmainSettingBtn";
+import ContmainLegendBtn from "./Btn/ContmainLegendBtn";
+import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
+
 const Contmain = () => {
   return (
     <div className="contmain-con">
@@ -22,6 +24,9 @@ const Contmain = () => {
       <div className="contmain-center">Under Development</div>
       <div className="contmain-bottom">
         <ContmainLegendBtn />
+        <div>
+          <ZoomOutMapIcon />
+        </div>
       </div>
     </div>
   );

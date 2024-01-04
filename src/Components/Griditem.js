@@ -1,15 +1,65 @@
 import React from "react";
 import "./Griditem.css";
 import graph from "../Logo/graph.png";
+import { LineChart } from "@mui/x-charts/LineChart";
 
 const Griditem = () => {
   return (
     <div className="grid-con">
       <div className="c1">
         <div className="c1-top">Efficiency Anomaly Score</div>
+        <div className="c1-checkbox">
+          <div>
+            <div className="c1-checkbox1"></div>
+            Anomaly Score
+          </div>
+          <div>
+            <div className="c1-checkbox2"></div>
+            Anomaly Threshold
+          </div>
+          <div>
+            <div className="c1-checkbox3"></div>
+            Risk zone
+          </div>
+        </div>
+        <LineChart
+          xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+          series={[
+            {
+              data: [2, 5.5, 2, 8.5, 1.5, 5],
+            },
+          ]}
+          width={400}
+          height={115}
+        />
       </div>
       <div className="c2">
-        <div className="c1-top">Efficiency Anomaly Score</div>
+        <div className="c1-top">Health Anomaly Score</div>
+        <div className="c1-checkbox">
+          <div>
+            <div className="c1-checkbox1"></div>
+            Anomaly Score
+          </div>
+          <div>
+            <div className="c1-checkbox2"></div>
+            Anomaly Threshold
+          </div>
+          <div>
+            <div className="c1-checkbox3"></div>
+            Risk zone
+          </div>
+        </div>
+        <LineChart
+          xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+          series={[
+            {
+              data: [8, 5.5, 2, 8.5, 1.5, 5],
+              area: true,
+            },
+          ]}
+          width={400}
+          height={115}
+        />
       </div>
       <div className="c3">
         <div id="c3-firstdiv" className="c3-alldiv">

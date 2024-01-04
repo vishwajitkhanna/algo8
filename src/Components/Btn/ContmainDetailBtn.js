@@ -7,14 +7,14 @@ const ContmainDetailBtn = () => {
     <div>
       <Button
         className="contmainDetailBtnHover"
-        id="document-btn"
+        id="document-btn2"
         variant="outlined"
       >
         Details
         <div className="contmainDetailBtnSubmenuHover">
           <div className="details-details">
             <div>Details</div>
-            <div>Active</div>
+            <div className="details-active">Active</div>
           </div>
           <div>
             <div className="details-middle">
