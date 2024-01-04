@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/algo8/static/css/main.8dd37bf2.css",
+    "main.js": "/algo8/static/js/main.86e64399.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/algo8/static/js/787.9e9f4ffd.chunk.js",
+    "index.html": "/algo8/index.html",
+    "main.8dd37bf2.css.map": "/algo8/static/css/main.8dd37bf2.css.map",
+    "main.86e64399.js.map": "/algo8/static/js/main.86e64399.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/algo8/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dd37bf2.css",
+    "static/js/main.86e64399.js"
+  ]
+}
