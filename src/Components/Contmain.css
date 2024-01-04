@@ -1,0 +1,29 @@
+#document-btn{
+    font-size: 7px;
+    border: 1px solid black;
+    color: black;
+    height: 25px;
+    padding: 0px 2px;
+}
+
+.contmain-con{
+    border: 1px solid black;
+    height: 80vh;
+    width: calc(100%-2vw);
+    margin: 0px 1vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contmain-top{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.contmain-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

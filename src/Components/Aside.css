@@ -1,0 +1,21 @@
+aside{
+    width: 35px;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* gap: 10px;
+    padding-top: 1.8vh; */
+}
+aside>div{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1p;
+}
+.aside-menuicon{
+    border-bottom: 1px solid black;
+    margin: 0px 4px;
+}
