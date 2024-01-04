@@ -30,7 +30,7 @@ const Griditem = () => {
             },
           ]}
           width={400}
-          height={115}
+          height={125}
         />
       </div>
       <div className="c2">
@@ -58,7 +58,7 @@ const Griditem = () => {
             },
           ]}
           width={400}
-          height={115}
+          height={125}
         />
       </div>
       <div className="c3">
