@@ -2,7 +2,7 @@
     width: 100%;
     /* padding-right: 1vw; */
     /* padding-left: 1vw; */
-    height: 58vh;
+    height: 60vh;
     display: grid;
     gap: 10px;
     grid-template-columns: 5fr 3fr;

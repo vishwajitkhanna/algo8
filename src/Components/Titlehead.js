@@ -10,7 +10,7 @@ const Titlehead = () => {
         <span className="titlehead-topic">Wet Gas Compressor</span>
         <span>
           {" "}
-          <sub>As on 18/05/2023 12:53:32</sub>
+          <sub className="titlehead-topic-subhead">As on 18/05/2023 12:53:32</sub>
         </span>
       </div>
       <div className="titlehead-right">

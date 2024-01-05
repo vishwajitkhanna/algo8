@@ -9,6 +9,12 @@
 }
 .titlehead-topic{
     text-transform: uppercase;
+    color: rgb(57, 57, 57);
+    font-weight: 600;
+    font-size: 18px;
+}
+.titlehead-topic-subhead{
+    font-size: 11px;
 }
 .titlehead-right{
     display: flex;
