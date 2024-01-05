@@ -1,0 +1,28 @@
+
+
+
+
+.zoom-container {
+    background-color: white;
+    margin: 0px 1vw;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 78vh;
+    width: 100%;
+   
+    transition: all 0.3s ease;
+    margin: auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 50;
+}
+
+.zoom-container.zoomed {
+    width: 245%;
+    z-index: 2;
+}

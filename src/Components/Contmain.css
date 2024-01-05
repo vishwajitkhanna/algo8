@@ -7,16 +7,6 @@
     text-transform: capitalize;
 }
 
-.contmain-con{
-    background-color: white;
-    height: 78vh;
-    width: calc(100%-2vw);
-    margin: 0px 1vw;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .contmain-top{
     display: flex;
     justify-content: flex-end;
