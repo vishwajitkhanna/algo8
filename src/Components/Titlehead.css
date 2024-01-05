@@ -26,15 +26,3 @@
     padding: 2px 12px;
     background-color: #0077B6;
 }
-
-@media screen and (max-width:700px) {
-    .titlehead{
-        width: 700px;
-        height: 8vh;
-        padding: 0px 1vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: -6vh;
-    }
-}

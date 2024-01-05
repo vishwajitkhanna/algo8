@@ -58,10 +58,10 @@ export default function NestedGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid xs={12} md={6} lg={5}>
+        <Grid xs={12} md={6} lg={4}>
           <Contmain />
         </Grid>
-        <Grid container xs={12} md={6} lg={7} spacing={2}>
+        <Grid container xs={12} md={6} lg={8} spacing={2}>
           {data.map((item) => {
             return (
               <Grid xs={6} lg={3}>

@@ -60,7 +60,7 @@ const Qwert = () => {
                 value == null ? "?" : value.toString(),
             },
           ]}
-          height={128}
+          height={129}
           margin={{ top: 10, bottom: 15 }}
         />
       </div>
@@ -89,7 +89,7 @@ const Qwert = () => {
             },
           ]}
           width={400}
-          height={128}
+          height={129}
           margin={{ top: 10, bottom: 15 }}
         />
       </div>
