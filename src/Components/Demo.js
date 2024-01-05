@@ -17,6 +17,44 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function NestedGrid() {
+  let data = [
+    {
+      name1: "Health",
+      number1: 98.34,
+      deg1: "%",
+      name2: "Time to Failure",
+      desc: "(in next 30 days)",
+      number2: 44,
+      deg2: "Weeks",
+    },
+    {
+      name1: "Efficiency",
+      number1: 98.34,
+      deg1: "%",
+      name2: "Power Consumption",
+      desc: "",
+      number2: 45,
+      deg2: "MW",
+    },
+    {
+      name1: "Steam Consumption",
+      number1: 98.34,
+      deg1: "T/hr",
+      name2: "Interstage Cooler Temp.",
+      desc: "",
+      number2: 98.34,
+      deg2: "Kg/cm",
+    },
+    {
+      name1: "Wet Gas Flow",
+      number1: 98.34,
+      deg1: "T/hr",
+      name2: "Suction Pressure",
+      desc: "",
+      number2: 98.34,
+      deg2: "kg/cm",
+    },
+  ];
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
@@ -24,134 +62,47 @@ export default function NestedGrid() {
           <Contmain />
         </Grid>
         <Grid container xs={12} md={6} lg={7} spacing={2}>
-          <Grid xs={6} lg={3}>
-            <Item>
-              <Box id="category-a" sx={{ fontSize: "12px" }}>
-                <div className="top-grid">
-                  <div>
-                    <div>Health</div>
-                    <div className="inside-grid">
+          {data.map((item) => {
+            return (
+              <Grid xs={6} lg={3}>
+                <Item>
+                  <Box id="category-a" sx={{ fontSize: "12px" }}>
+                    <div className="top-grid">
                       <div>
-                        98.34<sub> % </sub>
+                        <div>{item.name1}</div>
+                        <div className="inside-grid">
+                          <div>
+                            {item.number1}
+                            <sub> {item.deg1} </sub>
+                          </div>
+                          <div className="graph-img">
+                            <img src={graph} alt="" />
+                          </div>
+                        </div>
                       </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
+                      <hr />
+                      <div>
+                        <div>
+                          {item.name2}
+                          <sub>{item.desc}</sub>
+                        </div>
+                        <div className="inside-grid">
+                          <div>
+                            {item.number2}
+                            <sub> {item.deg2} </sub>
+                          </div>
+                          <div className="graph-img">
+                            <img src={graph} alt="" />
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <hr />
-                  <div>
-                    <div>Time to Failure</div>
-                    <div className="inside-grid">
-                      <div>
-                        44<sub> Weeks </sub>
-                      </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Box>
-            </Item>
-          </Grid>
-          <Grid xs={6} lg={3}>
-            <Item>
-              <Box id="category-b" sx={{ fontSize: "12px" }}>
-                <div className="top-grid">
-                  <div>
-                    <div>Efficiency</div>
-                    <div className="inside-grid">
-                      <div>
-                        98.34<sub> % </sub>
-                      </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <hr />
-                  <div>
-                    <div>Power Consumption</div>
-                    <div className="inside-grid">
-                      <div>
-                        45<sub> MW </sub>
-                      </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Box>
-            </Item>
-          </Grid>
-          <Grid xs={6} lg={3}>
-            <Item>
-              <Box id="category-c" sx={{ fontSize: "12px" }}>
-                <div className="top-grid">
-                  <div>
-                    <div>Steam Consumption</div>
-                    <div className="inside-grid">
-                      <div>
-                        98.34<sub> T/hr </sub>
-                      </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <hr />
-                  <div>
-                    <div>Interstage Cooler Temp.</div>
-                    <div className="inside-grid">
-                      <div>
-                        98.34<sub> &#176;C </sub>
-                      </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Box>
-            </Item>
-          </Grid>
-          <Grid xs={6} lg={3}>
-            <Item>
-              <Box id="category-d" sx={{ fontSize: "12px" }}>
-                <div className="top-grid">
-                  <div>
-                    <div>Wet Gas Flow</div>
-                    <div className="inside-grid">
-                      <div>
-                        98.34<sub> T/hr </sub>
-                      </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <hr />
-                  <div>
-                    <div>Suction Pressure</div>
-                    <div className="inside-grid">
-                      <div>
-                        98.34
-                        <sub>
-                          {" "}
-                          kg/cm<sup>2</sup>{" "}
-                        </sub>
-                      </div>
-                      <div className="graph-img">
-                        <img src={graph} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Box>
-            </Item>
-          </Grid>
+                  </Box>
+                </Item>
+              </Grid>
+            );
+          })}
+
           <Grid container xs={12} md={12} lg={12} spacing={0}>
             <Griditem />
           </Grid>

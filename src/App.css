@@ -1,19 +1,33 @@
 *{
     margin: 0px; padding: 0px; outline: 0px; box-sizing: border-box;
     color: #6E6E6E;
-  }
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+}
 .main{
     width: 100%;
-    height: 100vh;
     background-color: #eae9e9;
+    padding-bottom: 11px;
 }
 .main-right{
     width: 100%;
-    height: 100vh;
-    padding-left: 35px;
+    height: 100%;
+    padding-left: 75px;
 }
 .main-center{
     display: flex;
     padding-right: 1vw;
     overflow: hidden;
 }
+
+

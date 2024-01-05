@@ -14,7 +14,9 @@ const Titlehead = () => {
         </span>
       </div>
       <div className="titlehead-right">
-        <Shift />
+        <div>
+          <Shift />
+        </div>
         <Datagran />
       </div>
     </div>

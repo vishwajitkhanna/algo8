@@ -3,7 +3,28 @@ import "./Griditem.css";
 import graph from "../Logo/graph.png";
 import { LineChart } from "@mui/x-charts/LineChart";
 
-const Griditem = () => {
+const Qwert = () => {
+  let data1 = [
+    { name: "Turbine Shaft Axial Displ.", number: 98.34 },
+    { name: "Compressor Shaft Axial Displ.", number: 45 },
+    { name: "Turbine Shaft Vibration - NDE", number: 98.34 },
+    { name: "Turbine Shaft Vibration - DE", number: 45 },
+    { name: "Compression Shaft Vibration - DE", number: 45 },
+    { name: "Compression Shaft Vibration - DE", number: 98.34 },
+  ];
+  let data2 = [
+    { name: "Turbine Thrust Bearing Temp : AS", number: 98.34 },
+    { name: "Turbine Thrust Bearing Temp : NAS", number: 45 },
+    {
+      name: "Turbine Journal Bearing Temp : ND",
+      number: 98.34,
+    },
+    { name: "Turbine Journal Bearing Temp : DE", number: 45 },
+    { name: "Compressor Thrust Bearing Temp", number: 98.34 },
+    { name: "Compressor Thrust Bearing Temp", number: 45 },
+    { name: "Compressor Journal Bearing Temp", number: 98.34 },
+    { name: "Compressor Journal Bearing Temp", number: 45 },
+  ];
   return (
     <div className="grid-con">
       <div className="c1">
@@ -66,164 +87,42 @@ const Griditem = () => {
           Trip Tags
         </div>
         <div className="c3-overflowitem">
-          <div>
-            <div>Turbine Shaft Axial Displ.</div>
-            <div className="c3-grid">
+          {data1.map((obj) => {
+            return (
               <div>
-                98.34<sub> &#181;m </sub>
+                <div>{obj.name}</div>
+                <div className="c3-grid">
+                  <div>
+                    {obj.number}
+                    <sub> &#181;m </sub>
+                  </div>
+                  <div className="graph-img">
+                    <img src={graph} alt="" />
+                  </div>
+                </div>
               </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Compressor Shaft Axial Displ.</div>
-            <div className="c3-grid">
+            );
+          })}
+          {data2.map((obj) => {
+            return (
               <div>
-                45<sub> &#181;m </sub>
+                <div>{obj.name}</div>
+                <div className="c3-grid">
+                  <div>
+                    {obj.number}
+                    <sub> &#176;C </sub>
+                  </div>
+                  <div className="graph-img">
+                    <img src={graph} alt="" />
+                  </div>
+                </div>
               </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Turbine Shaft Vibration - NDE</div>
-            <div className="c3-grid">
-              <div>
-                98.34<sub> &#181;m </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Turbine Shaft Vibration - DE</div>
-            <div className="c3-grid">
-              <div>
-                45<sub> &#181;m </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Compression Shaft Vibration - DE</div>
-            <div className="c3-grid">
-              <div>
-                45<sub> &#181;m </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Compression Shaft Vibration - DE</div>
-            <div className="c3-grid">
-              <div>
-                98.34<sub> &#181;m </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Turbine Thrust Bearing Temp : AS</div>
-            <div className="c3-grid">
-              <div>
-                98.34<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Turbine Thrust Bearing Temp : NAS</div>
-            <div className="c3-grid">
-              <div>
-                45<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Turbine Journal Bearing Temp : ND</div>
-            <div className="c3-grid">
-              <div>
-                98.34<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Turbine Journal Bearing Temp : DE</div>
-            <div className="c3-grid">
-              <div>
-                45<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Compressor Thrust Bearing Temp</div>
-            <div className="c3-grid">
-              <div>
-                98.34<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Compressor Thrust Bearing Temp</div>
-            <div className="c3-grid">
-              <div>
-                45<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Compressor Journal Bearing Temp</div>
-            <div className="c3-grid">
-              <div>
-                98.34<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Compressor Journal Bearing Temp</div>
-            <div className="c3-grid">
-              <div>
-                45<sub> &#176;C </sub>
-              </div>
-              <div className="graph-img">
-                <img src={graph} alt="" />
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>
   );
 };
 
-export default Griditem;
+export default Qwert;
