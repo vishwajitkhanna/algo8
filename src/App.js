@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import Titlehead from "./Components/Titlehead";
-import NestedGrid from "./Components/Demo";
-import MiniDrawer from "./Components/Qwertyu";
+import NestedGrid from "./Components/Maingrid";
+import MiniDrawer from "./Components/Aside";
 
 const App = () => {
   return (

@@ -6,6 +6,7 @@ import ContmainDetailBtn from "./Btn/ContmainDetailBtn";
 import ContmainSettingBtn from "./Btn/ContmainSettingBtn";
 import ContmainLegendBtn from "./Btn/ContmainLegendBtn";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
+import ContButtonGroup from "./Contbtn";
 
 const Contmain = () => {
   return (
@@ -24,7 +25,8 @@ const Contmain = () => {
       <div className="contmain-center">Under Development</div>
       <div className="contmain-bottom">
         <ContmainLegendBtn />
-        <div>
+        <div className="contmain-bottom-right">
+          <ContButtonGroup />
           <ZoomOutMapIcon />
         </div>
       </div>

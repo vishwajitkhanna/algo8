@@ -33,4 +33,18 @@
     justify-content: space-between;
 }
 
+.contmain-bottom-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#document-btn5{
+    height: 25px;
+}
+.document-btn6{
+    width: 40px;
+}
+
 

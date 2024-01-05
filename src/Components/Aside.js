@@ -25,7 +25,7 @@ import CableIcon from "@mui/icons-material/Cable";
 import CampaignIcon from "@mui/icons-material/Campaign";
 import MacroOffIcon from "@mui/icons-material/MacroOff";
 import HvacIcon from "@mui/icons-material/Hvac";
-import PrimarySearchAppBar from "./Qwer";
+import PrimarySearchAppBar from "./Navb";
 
 const drawerWidth = 240;
 
