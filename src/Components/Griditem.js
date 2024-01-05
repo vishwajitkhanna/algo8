@@ -61,7 +61,7 @@ const Qwert = () => {
             },
           ]}
           height={129}
-          margin={{ top: 10, bottom: 15 }}
+          margin={{ top: 10, bottom: 20 }}
         />
       </div>
       <div className="c2">
@@ -88,9 +88,8 @@ const Qwert = () => {
               area: true,
             },
           ]}
-          width={400}
           height={129}
-          margin={{ top: 10, bottom: 15 }}
+          margin={{ top: 10, bottom: 20 }}
         />
       </div>
       <div className="c3">
