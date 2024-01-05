@@ -5,7 +5,7 @@ import MuiDrawer from "@mui/material/Drawer";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
-import CssBaseline from "@mui/material/CssBaseline";
+// import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
@@ -17,7 +17,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import StadiumIcon from "@mui/icons-material/Stadium";
 import BlurLinearIcon from "@mui/icons-material/BlurLinear";
 import HeatPumpIcon from "@mui/icons-material/HeatPump";
@@ -27,6 +26,7 @@ import CableIcon from "@mui/icons-material/Cable";
 import CampaignIcon from "@mui/icons-material/Campaign";
 import MacroOffIcon from "@mui/icons-material/MacroOff";
 import HvacIcon from "@mui/icons-material/Hvac";
+import PrimarySearchAppBar from "./Qwer";
 
 const drawerWidth = 240;
 
@@ -128,16 +128,7 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{
-              fontSize: 15,
-            }}
-          >
-            Mini variant drawer
-          </Typography>
+          <PrimarySearchAppBar />
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
@@ -198,7 +189,6 @@ export default function MiniDrawer() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <Typography paragraph></Typography>
       </Box>
     </Box>
   );
