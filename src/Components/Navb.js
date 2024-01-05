@@ -129,7 +129,7 @@ export default function PrimarySearchAppBar() {
               aria-label="show 4 new mails"
               color="inherit"
             >
-              <ViewInArIcon />
+              <ViewInArIcon sx={{ fill: "#0077B6", color: "#456543" }} />
             </IconButton>
             <IconButton
               size="large"
