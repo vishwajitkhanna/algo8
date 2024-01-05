@@ -32,4 +32,15 @@
     overflow: hidden;
 }
 
+.nav-update{
+    font-size: 11px;
+}
+.nav-titles{
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav-titles-color{
+    color: #499ECB;
+}
+
 
